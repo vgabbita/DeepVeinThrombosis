@@ -1,0 +1,162 @@
+/* 
+Project Name: ThromboSense 
+Team Members: Nidhi Nair, Varun Gabbita, Shravani Vedagiri 
+Date: 5/31 
+Task: instructions.css file, controls styling for instructions page */
+
+
+body{
+    background-image: url("/static/img/bloodBG.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+} 
+
+/* CSS for Page Title */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+.instructhead{
+    padding-top: 7%;
+}
+
+/* CSS for GIF Carousel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+  font-family: 'Montserrat';
+}  
+
+.carousel-indicators{
+  background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+/* CSS for FAQ Section */
+.faq-section {
+  min-height: 100vh;
+  padding-top: 10vh;
+  padding-right: 10vw;
+  padding-left: 12vw;
+  font-family: 'Montserrat';
+  /* width: 80vw; */
+}
+.faq-title h2 {
+position: relative;
+margin-bottom: 45px;
+display: inline-block;
+font-weight: 600;
+line-height: 1;
+font-size: 50px!important; 
+}
+.faq-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #E91E63;
+  bottom: -25px;
+  margin-left: -30px;
+}
+.faq-title p {
+padding: 0 190px;
+margin-bottom: 10px;
+}
+
+.faq {
+background: #fbf8f8;
+box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+/* padding-right:25vw;
+padding-left: -25vw; */
+}
+
+/* FAQ Cards */
+.faq .card {
+border: none;
+background: none;
+border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+padding: 0px;
+border: none;
+background: none;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+  background: rgba(233, 30, 99, 0.1);
+  padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+width: 100%;
+text-align: left;
+padding: 0px;
+padding-left: 30px;
+padding-right: 30px;
+font-weight: 400;
+font-size: 26px;
+letter-spacing: 1px;
+color: #3B566E;
+text-decoration: none !important;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+display: inline-block;
+width: 30px;
+height: 30px;
+line-height: 14px;
+float: left;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+text-align: center;
+background: #f35757;
+color: #fff;
+font-size: 20px;
+margin-right: 20px;
+}
+
+.faq .card .card-body {
+padding: 30px;
+padding-left: 35px;
+padding-bottom: 16px;
+font-weight: 400;
+font-size: 26px;
+color: #6F8BA4;
+line-height: 28px;
+letter-spacing: 1px;
+border-top: 1px solid #F3F8FF;
+
+}
+
+.faq .card .card-body p {
+margin-bottom: 14px;
+}
+
+/* Responsiveness for FAQ */
+@media (max-width: 991px) {
+.faq {
+  margin-bottom: 30px;
+}
+.faq .card .card-header .faq-title {
+  line-height: 26px;
+  margin-top: 10px;
+}
+}

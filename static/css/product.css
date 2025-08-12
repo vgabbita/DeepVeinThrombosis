@@ -1,0 +1,235 @@
+
+/* 
+Project Name: ThromboSense 
+Team Members: Nidhi Nair, Varun Gabbita, Shravani Vedagiri 
+Date: 5/31 
+Task: product.css file, controls styling for our product page */
+
+/* --------------------Navbar--------------------- */
+.nb-bg-color{
+    background-color: rgb(189, 185, 185,0.75);
+    border-radius: 25px;
+    margin-left: 30px!important;
+    margin-right: 30px!important;
+
+}
+
+.nav-hover{
+    color: rgb(0, 0, 0);
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+}
+.nav-hover:hover{
+    color: rgb(237, 232, 232);
+}
+
+
+.nav-item{
+    margin-right: 50px;
+    font-size: 20px;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    border-radius:25px;
+}
+.dropdown-menu{
+    margin-top: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    border-radius: 25px;
+}
+.dropdown-item{
+    color: rgb(0, 0, 0);
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    border-radius: 25px;
+    text-align: center;
+}
+.dropdown-item:active{
+    background-color:rgb(240, 64, 64);
+}
+.hover-scale:hover {
+    transform: scale(1.1)
+}
+.nav-link {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #e23c30;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition-duration: 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+    transition-property: color, background-color, border-color;
+}
+/* -------------------- Main Section --------------------- */
+#productbackground{
+    background-color: black;
+}
+
+/* -------------------- Heart Animation --------------------- */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+.heart{
+    position: absolute;
+    top:50%;
+    left:47%;
+    transform: translate(-50%,-50%);
+    transform: scale(3.5);
+    padding-top: 2%;
+    padding-bottom: 5%;
+
+}
+i{
+    color: #000;
+    font-size: 90px;
+    animation: beat 1.2s infinite;
+    text-shadow:
+        0 0 5px pink,
+        0 0 45px pink,
+        0 0 90px red
+    ;
+}
+@keyframes beat{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.15);
+    }
+    40%{
+        transform: scale(1.4);
+    }
+}
+
+
+
+.reveal {
+	 opacity: 0;
+	 transform: translate3d(0,100px,0);
+	 transition: opacity 0.8s, transform 0.8s;
+}
+ .reveal_visible {
+	 opacity: 1;
+	 transform: translate3d(0,0,0);
+}
+
+  
+.heartText{
+    max-width: 100vw;
+    font-family: 'Montserrat';
+    color: rgb(202, 200, 200);
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 33%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+/*Text Fill Animation*/
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #d76a8b 0%,
+    #f96464 29%,
+    #ff1361 67%,
+    #d9dcda 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+      font-size: 205px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* -------------------- Blooddrop Animation --------------------- */
+.bloodrow{
+  width:100vw;
+  height:100vh;
+  padding-top: 5%;
+}
+#blood-drop-background{
+    background-image: url("/static/img/blooddrop.gif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.clottext{
+  max-width: 100vw;
+  font-family: 'Montserrat';
+  color: rgb(202, 200, 200);
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 15%;
+  margin-bottom: auto;
+  text-align:center;
+  margin-left: 2%;
+  margin-right: 2%
+
+}
+
+/* -------------------- Enlarge text Animation --------------------- */
+.enlarge{
+  color:red;
+  animation: enlarged 5s infinite;
+}
+
+@keyframes enlarged {
+  50% {font-size: 50px;}
+}
+
+
+/* --------------------Cuff Overview Video --------------------- */
+
+#cuffbackground{
+    background-image: url("/static/img/product.gif");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 10px;
+    bottom: 500px;
+  }
+
+
+  /* -------------------- Flowmeter Animation --------------------- */
+
+  #flowmeter{
+    padding-top:3%;
+  }
+  
+  .electromegnetictitle{
+    color: rgb(202, 200, 200);
+    font-weight: bold;
+    padding-top: 10%;
+  }
